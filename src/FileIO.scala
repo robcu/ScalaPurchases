@@ -1,4 +1,4 @@
-import java.io.{BufferedWriter, File, FileWriter}
+import java.io.{File, FileWriter}
 
 import scala.collection.mutable
 import scala.io.Source
@@ -21,7 +21,7 @@ object FileIO {
   }
 
   def printFilteredPurchases(temp: mutable.MutableList[Purchase]) = {
-    temp.foreach(x => println(x))
+    temp.foreach(x => print(x))
   }
 
   def readFile(filename: String) = {
